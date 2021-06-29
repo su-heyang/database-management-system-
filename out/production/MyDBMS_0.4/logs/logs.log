@@ -1,0 +1,395 @@
+2021年6月12日下午6:25:33 -->> : create table student(sno int,sname char(10),sdept char(30),ssex char(5),sage int);
+2021年6月12日下午6:27:31 -->> : insert into student(sno,sname,sdept,ssex,sage) values (2021001,'小李','数学系','男',20);
+2021年6月12日下午6:28:40 -->> : insert into student(sno,sname,sdept,ssex,sage) values (2021002,'小明','英语系','男',21);
+2021年6月12日下午6:31:48 -->> : insert into student(sno,sname,sdept,ssex,sage) values (2021003,'xiaoming','English','m',21);
+2021年6月12日下午8:10:34 -->> : select * from student
+2021年6月12日下午8:11:45 -->> : insert into student(sno,sname,sdept,ssex,sage) values (2021003,'小刚','天文系','男',20);
+2021年6月12日下午8:11:57 -->> : select * from student
+2021年6月12日下午8:12:57 -->> : insert into student(sno,sname,sdept,ssex,sage) values (2021004,'小叶','金融系','女',19);
+2021年6月12日下午8:13:30 -->> : select * from student
+2021年6月19日下午9:43:40 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月21日下午6:59:16 -->> : create table test(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月21日下午7:10:11 -->> : insert into test2 (sno,sname,sdept,ssex,sage)values (001,'nn','chinese','女',18);
+
+2021年6月21日下午8:33:26 -->> : insert into test2(sno,sname,sdept,ssex,sage) values (2018, jack','computer','男',26)；
+2021年6月21日下午10:13:52 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2019,'jack1','math','男',16);
+2021年6月22日上午10:28:09 -->> : drop table student;
+2021年6月22日上午10:28:19 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日上午10:30:48 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('201912210001','jack','computer','男',19);
+2021年6月22日上午10:31:48 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('201912210002','Amy','MAth','女',19);
+2021年6月22日上午10:32:24 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('201912210003','Jam','MAth','男',19);
+2021年6月22日上午10:33:38 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','Amy','MAth','Female',19);
+
+2021年6月22日上午10:33:45 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月22日上午10:35:51 -->> : drop table student;
+2021年6月22日上午10:36:23 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日上午10:36:48 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月22日上午10:36:57 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','Amy','MAth','Female',19);
+2021年6月22日上午10:37:28 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2003','Sam','Art','Female',18);
+2021年6月22日上午10:37:59 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2004','Tom','chinese','male',18);
+2021年6月22日上午10:41:23 -->> : alter table student drop column grade;
+2021年6月22日上午10:48:45 -->> : alter table student add  grade char(5);
+2021年6月22日上午10:49:54 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','Tobm','Art','Male',18);
+2021年6月22日上午10:54:22 -->> : update student set sname='Tony' where sno='2005';
+2021年6月22日上午10:57:04 -->> : delete from student where sno='2005';
+2021年6月22日上午10:57:38 -->> : select * from student where sno='2001';
+2021年6月22日下午1:58:40 -->> : create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午2:00:24 -->> : alter table student add  grade int;
+2021年6月22日下午2:09:31 -->> : create table student3(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午2:10:29 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','王一','计算机系','男',19);
+2021年6月22日下午2:12:10 -->> : insert into student3 (sno,sname,sdept,ssex,sage) values ('2001','依依','计算机系','男',19);
+2021年6月22日下午2:12:49 -->> : insert into student3 (sno,sname,sdept,ssex,sage) values ('2002','望望','建筑系','男',18);
+2021年6月22日下午2:16:26 -->> : create table student4(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午2:44:36 -->> : 
+create table student5(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:16:56 -->> : create table student8(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:28:56 -->> : create table s1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:29:52 -->> : create table s2(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:30:48 -->> : create table s3(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:31:50 -->> : create table s4(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:32:56 -->> : create table s5(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:34:09 -->> : create table s6(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午3:35:27 -->> : create table s7(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午4:10:51 -->> : create table s1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午8:54:20 -->> : create table student9(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午8:58:48 -->> : create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月22日下午8:59:39 -->> : insert into student1 (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月23日上午10:43:41 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:15:48 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+
+2021年6月23日上午11:16:25 -->> : 
+create table student3(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:17:18 -->> : create table studen3t(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:26:59 -->> : create table student8(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:29:23 -->> : create table student9(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:32:19 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:34:36 -->> : create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:39:22 -->> : 
+create table student2(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:40:10 -->> : 
+create table student4(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:49:11 -->> : 
+create table student3(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日上午11:49:29 -->> : 
+insert into student3 (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月23日上午11:49:47 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','Amy','MAth','Female',19);
+2021年6月23日上午11:50:57 -->> : insert into student3 (sno,sname,sdept,ssex,sage) values ('2003','jackkk','computer','Male',19);
+2021年6月23日上午11:52:51 -->> : insert into student3 (sno,sname,sdept,ssex,sage) values ('2003','Sam','Art','Female',18);
+2021年6月23日下午1:30:13 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午1:30:48 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午1:31:20 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午1:31:54 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午1:33:02 -->> : 
+insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月23日下午1:33:54 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午1:34:24 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月23日下午1:34:33 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','Amy','MAth','Female',19);
+2021年6月23日下午1:34:42 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2003','Sam','Art','Female',18);
+
+2021年6月23日下午1:36:05 -->> : alter table student add  grade char(5);
+2021年6月23日下午1:37:54 -->> : alter table student add  gradee char(5);
+2021年6月23日下午1:45:04 -->> : alter table student add  grade char(5);
+2021年6月23日下午1:46:09 -->> : alter table student add  gde char(5);
+2021年6月23日下午1:47:21 -->> : alter table student add  eeee char(5);
+2021年6月23日下午1:48:16 -->> : alter table student add  ere char(5);
+2021年6月23日下午1:49:20 -->> : alter table student add  erete char(5);
+2021年6月23日下午1:55:48 -->> : alter table student add  grade3 char(5);
+2021年6月23日下午1:57:45 -->> : alter table student add  grade char(5);
+2021年6月23日下午1:58:09 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','Tobm','Art','Male',18);
+2021年6月23日下午1:58:59 -->> : alter table student drop column gradee ;
+2021年6月23日下午1:59:37 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','Tobm','Art','Male',18);
+2021年6月23日下午2:04:19 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2006','Teem','Art','Male',18);
+2021年6月23日下午2:06:42 -->> : alter table student drop column gde ;
+2021年6月23日下午2:12:08 -->> : 
+
+create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午3:14:35 -->> : drop table student;
+2021年6月23日下午3:15:34 -->> : insert into student1 (sno,sname,sdept,ssex,sage) values ('2013','jeek','computer','Male',19);
+2021年6月23日下午3:24:36 -->> : update student1 set sage=18 where sno=2018;
+2021年6月23日下午3:26:55 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月23日下午3:27:04 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26);
+2021年6月23日下午3:27:25 -->> : update test2 set sage=18 where sno=2018;
+2021年6月23日下午3:29:25 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2011,'jacddk','computer','男',26);
+
+2021年6月23日下午4:04:03 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2020,'jatck','computer','男',26);
+2021年6月23日下午4:20:50 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2002,'jacddk','computer','男',26);
+2021年6月24日上午10:17:20 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2002,'jacdddk','computer','男',26);
+2021年6月24日上午10:34:03 -->> : select * from test2 where sno=2018;
+2021年6月24日上午10:35:34 -->> : select * from test2 where sno=2018;
+2021年6月24日上午10:50:59 -->> : create table test3(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月24日上午11:09:35 -->> : create table test4(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月24日上午11:12:08 -->> : create table test5(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月24日上午11:18:12 -->> : create table test8(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月24日下午8:11:32 -->> : create table student (sno int primary key,sname char(10) not null,sage int);
+2021年6月24日下午8:12:08 -->> : insert into student (sno,sname,sage) values (1001,'LiHong',19);
+2021年6月24日下午8:14:31 -->> : insert into student (sno,sname,sage) values (1002,'xiaoming',20);
+2021年6月24日下午8:16:00 -->> : update student set sage=18 where sname='xiaoming';
+2021年6月24日下午8:16:17 -->> : select * from student;
+2021年6月24日下午9:00:08 -->> : create table test (x int,y int);
+2021年6月24日下午9:01:33 -->> : insert into test (x,y) values (1,2);
+2021年6月25日上午11:51:21 -->> : insert into test(x,y) values (3,4);
+2021年6月25日上午11:51:38 -->> : insert into test (x,y) values (5,6);
+2021年6月25日上午11:52:17 -->> : insert into test (x,y) values (2,2);
+2021年6月25日上午11:52:47 -->> : select * from test group by y;
+2021年6月25日上午11:53:31 -->> : select * from test order by y;
+2021年6月25日上午11:55:04 -->> : select * from test where x<=5 group by y;
+2021年6月25日上午11:56:25 -->> : select * from test where y=2;
+2021年6月25日上午11:58:24 -->> : select * from test group by y;
+2021年6月25日下午12:13:12 -->> : select sum(x) from test;
+2021年6月25日下午12:14:59 -->> : select sum(x) from test;
+2021年6月25日下午12:15:44 -->> : select sum(x) from test;
+2021年6月25日下午12:17:29 -->> : select MAX(y) from test;
+2021年6月25日下午12:18:02 -->> : select MIN(x) from test;
+2021年6月25日下午1:27:30 -->> : create table test0(x int,y int);
+2021年6月25日下午1:27:44 -->> : insert into test0(x,y) values (2,3);
+2021年6月25日下午1:28:02 -->> : insert into test0(x,y) values (4,5);
+2021年6月25日下午1:28:10 -->> : select * from test0;
+2021年6月25日下午1:28:35 -->> : select * from test0 where y=3;
+2021年6月25日下午1:32:19 -->> : select * from test0 where y=3;
+2021年6月25日下午1:33:36 -->> : select * from test0 where x=2;
+2021年6月25日下午5:00:50 -->> : delete from test2 where sno=2018;
+2021年6月25日下午5:01:11 -->> : drop table test0;
+2021年6月25日下午5:13:30 -->> : select * from test2;
+2021年6月25日下午8:09:25 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月25日下午8:11:25 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19);
+2021年6月25日下午8:11:40 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','Amy','MAth','Female',19);
+2021年6月25日下午8:11:47 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2003','Sam','Art','Female',18);
+2021年6月25日下午8:11:54 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2004','Tom','Art','Male',18);
+2021年6月25日下午8:14:06 -->> : drop table student;
+2021年6月25日下午8:14:13 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月25日下午8:14:32 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','小朱','法语系','男',19);
+2021年6月25日下午8:14:40 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','小叶','数学系','男',19);
+2021年6月25日下午8:14:46 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2003','小青','美术系','女',18);
+2021年6月25日下午8:14:53 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2004','小峰','中文系','女',18);
+2021年6月25日下午8:15:46 -->> : alter table student add  grade char(5);
+2021年6月25日下午8:17:10 -->> : insert into student (sno,sname,sdept,ssex,sage,grade) values ('2005','小唐','俄语系','男',18,84);
+2021年6月25日下午8:18:58 -->> : alter table student drop column grade;
+2021年6月25日下午8:28:34 -->> : delete from student where sno='2005';
+2021年6月25日下午8:30:55 -->> : delete from student where sno='2005';
+2021年6月25日下午8:31:55 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','小唐','俄语系','男',18); 
+2021年6月25日下午8:32:09 -->> : delete from student where sno='2005';
+2021年6月25日下午8:32:35 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','小唐','俄语系','男',18);
+2021年6月25日下午8:32:51 -->> : delete from student where sno='2005';
+2021年6月25日下午8:33:28 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','小唐','俄语系','男',18); 
+2021年6月25日下午8:33:38 -->> : delete from student where sno='2005';
+2021年6月25日下午8:35:05 -->> : delete from student where sno='2004';
+2021年6月25日下午8:35:49 -->> : delete from student where sno='2003';
+2021年6月25日下午8:36:20 -->> : delete from student where sno='2001';
+2021年6月25日下午8:37:04 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','小朱','法语系','男',19);
+2021年6月25日下午8:37:09 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2002','小叶','数学系','男',19);
+2021年6月25日下午8:37:15 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2003','小青','美术系','女',18);
+2021年6月25日下午8:37:24 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2004','小峰','中文系','女',18);
+2021年6月25日下午8:37:34 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2005','小唐','俄语系','男',18);
+2021年6月25日下午8:38:30 -->> : insert into student (sno,sname,sdept,ssex,sage,grade) values ('2006,'小d唐','俄语系','男',18,98); 
+2021年6月25日下午8:38:56 -->> : delete from student where sno='2006';
+2021年6月25日下午8:40:11 -->> : select * from student;
+2021年6月25日下午8:43:35 -->> : select * from student;
+2021年6月25日下午8:44:13 -->> : select * from student;
+2021年6月25日下午8:45:24 -->> : select * from student;
+2021年6月25日下午8:45:50 -->> : select * from student ;
+2021年6月25日下午8:46:29 -->> : delete from student where sno='2005';
+2021年6月25日下午8:47:07 -->> : insert into student (sno,sname,sdept,ssex,sage,grade) values ('2005','小唐','俄语系','男',18,98);
+2021年6月25日下午8:47:19 -->> : delete from student where sno='2005';
+2021年6月25日下午9:45:43 -->> : create table student2(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月25日下午9:45:53 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','小朱','法语系','男',19);
+2021年6月25日下午9:46:37 -->> : drop table student1;
+2021年6月25日下午9:48:19 -->> : create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+2021年6月25日下午9:48:35 -->> : insert into student1 (sno,sname,sdept,ssex,sage) values ('2001','小朱','法语系','男',19);
+2021年6月25日下午9:48:44 -->> : insert into student2 (sno,sname,sdept,ssex,sage) values ('2002','小叶','数学系','男',19);
+2021年6月25日下午9:48:57 -->> : insert into student1 (sno,sname,sdept,ssex,sage) values ('2003','小青','美术系','女',18);
+2021年6月25日下午9:49:07 -->> : insert into student1 (sno,sname,sdept,ssex,sage) values ('2002','小叶','数学系','男',19);
+2021年6月25日下午9:50:10 -->> : insert into student1(sno,sname,sdept,ssex,sage) values ('2004','小峰','中文系','女',18);
+2021年6月25日下午9:50:19 -->> : alter table student add  grade int;
+2021年6月25日下午9:50:27 -->> : alter table student1 add  grade int;
+2021年6月25日下午9:50:42 -->> : insert into student1 (sno,sname,sdept,ssex,sage,grade) values ('2005','小唐','俄语系','男',18,98);
+2021年6月25日下午9:51:06 -->> : alter table student1 drop column grade;
+2021年6月25日下午9:51:19 -->> : select * from student;
+2021年6月25日下午9:57:08 -->> : delete from student where sno='2001'; 
+2021年6月25日下午9:57:35 -->> : select * from student;
+2021年6月26日下午2:47:15 -->> : select * from student;
+2021年6月26日下午2:48:42 -->> : select * from student;
+2021年6月26日下午3:14:00 -->> : select * from student;
+2021年6月26日下午3:15:10 -->> : select * from test;
+2021年6月26日下午3:15:23 -->> : select * from student;
+2021年6月26日下午3:17:16 -->> : select * from student;
+2021年6月26日下午3:20:17 -->> : select * from student
+2021年6月26日下午3:21:36 -->> : select * from student
+2021年6月26日下午3:23:08 -->> : drop table test
+2021年6月26日下午3:24:43 -->> : select * from student
+2021年6月26日下午3:25:50 -->> : select * from student
+2021年6月26日下午3:26:08 -->> : select * from test2
+2021年6月26日下午3:27:13 -->> : select * from student
+2021年6月26日下午3:28:02 -->> : select * from student;
+
+2021年6月26日下午3:28:12 -->> : select * from test2
+2021年6月26日下午3:28:32 -->> : create table test(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午3:28:43 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午3:28:55 -->> : insert into test (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午3:29:08 -->> : select * from test
+2021年6月26日下午3:37:37 -->> : update test2 set sajoge=18 where sno=2018
+2021年6月26日下午3:38:03 -->> : update test2 set sddage=18 where sno=2018
+2021年6月26日下午3:38:36 -->> : insert into test2 (sno,snamde,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午8:20:39 -->> : create table test11(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午8:22:41 -->> : create table test12(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午8:23:27 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午8:24:02 -->> : create table test1(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午8:24:54 -->> : create table test13(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午8:25:16 -->> : insert into test13(sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午8:25:34 -->> : insert into test13 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午8:29:29 -->> : create table test14(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:22:32 -->> : create table test4(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:23:07 -->> : create table test5(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:23:41 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:23:53 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:41:33 -->> : create table test1(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:41:47 -->> : insert into test1 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:41:54 -->> : insert into test1 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:45:24 -->> : create table test4(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:45:34 -->> : insert into test4 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:45:59 -->> : insert into test4 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:47:20 -->> : create table test6(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:47:30 -->> : insert into test6 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:47:37 -->> : insert into test6 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:49:26 -->> : create table test7(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:49:36 -->> : insert into test7 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:49:41 -->> : insert into test7 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:50:57 -->> : create table test2(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:51:12 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values ('2018','jack','computer','男',26)
+2021年6月26日下午9:55:58 -->> : create table test1(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午9:56:15 -->> : insert into test1 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午9:56:22 -->> : insert into test1 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:01:15 -->> : create table test5(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午10:02:50 -->> : insert into test5 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:03:11 -->> : insert into test5 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:25:28 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午10:25:36 -->> : insert into student (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19)
+2021年6月26日下午10:25:55 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午10:26:02 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:26:04 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:27:30 -->> : create table test(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午10:27:40 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:27:50 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:35:22 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午10:35:29 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月26日下午10:37:03 -->> : create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月26日下午10:37:16 -->> : insert into student1 (sno,sname,sdept,ssex,sage) values ('2001','jack','computer','Male',19)
+2021年6月27日下午5:48:19 -->> : create table eee(x int,y double,c char(5))
+2021年6月27日下午5:56:25 -->> : create table test3(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月27日下午5:56:45 -->> : insert into test3(sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月27日下午5:58:01 -->> : create table eee1(x int,y double,c char(5))
+2021年6月27日下午6:01:51 -->> : create table eee(x int,y int,c char(5))
+2021年6月27日下午6:02:34 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月27日下午6:02:41 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月27日下午6:03:03 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2019,'jack','computer','男',26)
+2021年6月27日下午6:04:10 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2013,'jack','computer','男',26)
+2021年6月27日下午6:04:42 -->> : create table test3(sno int primary key not null,sname char(10) not null,sdept char(30) unique,ssex char(5),sage int)
+2021年6月27日下午6:05:13 -->> : insert into test3 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月27日下午6:06:04 -->> : insert into test3 (sno,sname,sdept,ssex,sage) values (2019,'jack','compu8ter','男',26)
+2021年6月27日下午6:07:31 -->> : create table eee12(x int,y int,z int)
+2021年6月27日下午6:09:34 -->> : insert into eee12(x,y,z) values (1,2,3)
+2021年6月27日下午6:23:51 -->> : create table student(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月27日下午6:24:20 -->> : create table student1(sno char(15) primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月28日上午9:53:18 -->> : create table w (x int,y double,z char(5))
+2021年6月28日上午9:54:23 -->> : insert into w (x,y,z) values (5,6.6,'a'); 
+2021年6月28日上午9:55:42 -->> : insert into w (x,y,z) values (5,6.9,'f')
+2021年6月28日上午9:57:06 -->> : create table eee(x int,y int,z int)
+2021年6月28日上午9:57:31 -->> : insert into eee(x,y,c) values (1,2,2)
+2021年6月28日上午9:57:42 -->> : insert into eee(x,y,z) values (1,2,2)
+2021年6月28日上午9:58:52 -->> : create table eee1(x int,y int,z int)
+2021年6月28日上午9:59:10 -->> : insert into eee(x,y,z) values (1,2,2)
+2021年6月28日上午9:59:18 -->> : insert into eee(x,y,z) values (1,2,2)
+2021年6月28日上午10:00:05 -->> : delete from eee where x=1 and y=2
+2021年6月28日下午12:11:27 -->> : create table y (x int ,y int)
+2021年6月28日下午12:19:06 -->> : drop table w
+2021年6月28日下午2:35:16 -->> : create table eee2(x int,y int,z int)
+2021年6月28日下午2:35:55 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月28日下午2:36:03 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月28日下午2:36:36 -->> : create table test3(sno int primary key not null,sname char(10) not null,sdept char(30) unique,ssex char(5),sage int)
+2021年6月28日下午2:50:21 -->> : select * from test2
+2021年6月28日下午2:50:36 -->> : insert into test2(sno,sname,sdept,ssex,sage) values (2019, jack','computer','男',27)；
+2021年6月28日下午2:50:58 -->> : insert into test2(sno,sname,sdept,ssex,sage) values (2020, jack','computer','男',59)
+2021年6月28日下午2:52:52 -->> : select from test2 where sno=2018 and sage=26
+2021年6月28日下午2:53:26 -->> : select * from test2
+2021年6月28日下午2:54:54 -->> : select from test2 where sno=2018 or sno=2020
+2021年6月29日上午5:57:02 -->> : create database my_sql
+2021年6月29日上午6:02:15 -->> : create database mydata
+2021年6月29日上午6:03:16 -->> : create table test2(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int)
+2021年6月29日上午6:03:54 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2018,'jack','computer','男',26)
+2021年6月29日上午6:04:13 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2019,'jack','computer','男',26)
+2021年6月29日上午6:04:24 -->> : insert into test2 (sno,sname,sdept,ssex,sage) values (2020,'jack','computer','男',26)
+2021年6月29日上午6:08:20 -->> : create database d1
+2021年6月29日上午6:09:45 -->> : create table e(a int,b int)
+2021年6月29日上午6:13:50 -->> : create database database
+2021年6月29日上午6:14:37 -->> : create table database(x int,y int)
+2021年6月29日上午6:24:40 -->> : create database d2
+2021年6月29日上午6:25:07 -->> : create table t1(a int,b int)
+2021年6月29日上午6:27:26 -->> : create database database1
+2021年6月29日上午6:28:36 -->> : create table database(x int,y int)
+2021年6月29日上午6:30:14 -->> : create database database2
+2021年6月29日上午6:30:42 -->> : create table database(x int,y int)
+2021年6月29日上午6:31:33 -->> : create table database2(x int unique,y int)
+2021年6月29日上午6:34:58 -->> : insert into database2 (x,y) values (1,2)
+2021年6月29日上午6:36:17 -->> : insert into database2 (x,y) values (12,3)
+2021年6月29日上午6:36:41 -->> : insert into database2 (x,y) values (3,33)
+2021年6月29日上午6:36:49 -->> : insert into database2 (x,y) values (31,33)
+2021年6月29日上午6:36:58 -->> : insert into database2 (x,y) values (21,33)
+2021年6月29日上午6:39:17 -->> : alter table database2 add java_grade int
+2021年6月29日上午6:40:10 -->> : select * from database2
+2021年6月29日上午6:40:44 -->> : alter table database2 drop column java_grade
+2021年6月29日上午6:41:07 -->> : select * from database2
+2021年6月29日上午6:41:43 -->> : update database2 set x=18 where x=1
+2021年6月29日上午6:42:12 -->> : delete from database2 where x=21
+2021年6月29日上午6:42:57 -->> : select * from database2 where x=31 or y=3
+2021年6月29日上午7:12:36 -->> : create database database
+2021年6月29日上午7:13:32 -->> : drop database database
+2021年6月29日上午7:50:43 -->> : create database database3
+2021年6月29日上午7:50:58 -->> : create table database3(x int,y int)
+2021年6月29日上午7:52:55 -->> : insert into database3 (x,y) values (1,2)
+2021年6月29日上午7:53:25 -->> : create table e (a char(5),b int)
+2021年6月29日上午7:55:14 -->> : create database da1
+2021年6月29日上午7:55:22 -->> : create table database(x int,y int)
+2021年6月29日上午7:56:04 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午8:13:53 -->> : create database da2
+2021年6月29日上午8:14:11 -->> : create table ee(x int,y int)
+2021年6月29日上午8:14:22 -->> : insert into ee (x,y) values (1,2)
+2021年6月29日上午8:14:44 -->> : create table database(x int,y int)
+2021年6月29日上午8:16:59 -->> : create database de
+2021年6月29日上午8:17:07 -->> : create table database(x int,y int)
+2021年6月29日上午8:17:16 -->> : create table de(x int,y int)
+2021年6月29日上午8:17:30 -->> : insert into de (x,y) values (1,2)
+2021年6月29日上午8:17:32 -->> : insert into de (x,y) values (1,2)
+2021年6月29日上午8:17:42 -->> : drop table database
+2021年6月29日上午8:20:40 -->> : drop database d1
+2021年6月29日上午8:21:04 -->> : create database database
+2021年6月29日上午8:21:30 -->> : create table database(x int,y int)
+2021年6月29日上午8:21:42 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午8:21:45 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午8:21:48 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午8:21:51 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午8:22:30 -->> : create table eee(x int primary key,y int,z int)
+2021年6月29日上午8:22:49 -->> : insert into eee (x,y,z) values (1,2,2)
+2021年6月29日上午8:22:59 -->> : insert into eee (x,y,z) values (2,2,2)
+2021年6月29日上午8:24:03 -->> : create table eee2(x int primary key,y int unique,z int)
+2021年6月29日上午8:24:24 -->> : insert into eee2 (x,y,z) values (1,2,2)
+2021年6月29日上午8:25:16 -->> : select * from eee
+2021年6月29日上午8:25:40 -->> : alter table eee add java_grade int
+2021年6月29日上午8:25:54 -->> : select * from eee
+2021年6月29日上午8:26:10 -->> : alter table eee drop column java_grade
+2021年6月29日上午8:26:22 -->> : select * from eee
+2021年6月29日上午8:26:48 -->> : update eee set x=18 where z=2
+2021年6月29日上午9:09:38 -->> : create database database
+2021年6月29日上午9:11:59 -->> : drop database database
+2021年6月29日上午9:12:07 -->> : create database database
+2021年6月29日上午9:12:14 -->> : create table database(x int,y int)
+2021年6月29日上午9:12:21 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午9:12:23 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午9:23:07 -->> : create table database(x int,y int)
+2021年6月29日上午9:23:15 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午9:30:12 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午9:31:30 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午9:41:42 -->> : insert into database (x,y) values (1,2)
+2021年6月29日上午9:42:06 -->> : select * from database
+2021年6月29日上午9:42:26 -->> : insert into database (x,y) values (2,2)
+2021年6月29日上午9:42:52 -->> : update database set x=18 where x=2
+2021年6月29日上午9:43:18 -->> : delete from database where x=18
+2021年6月29日上午9:44:09 -->> : select * from database

@@ -1,0 +1,23 @@
+SQL语句格式说明：
+Create语句：
+1、建库：create database<库名>;
+2、建表：create table<表名>(<列名><数据类型><列级完整性约束条件>,<列名><数据类型><列级完整性约束条件>,……,<表级完整性约束条件>);
+例：create database a1;
+create table test(sno int primary key not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+Drop语句：
+1、删库：drop database<库名>;
+2、删表：drop table<表名>;
+例：drop database a1;
+drop table test;
+Alter语句：alter table<表名>add<新列名><数据类型><完整性约束>;或alter table<表名>drop column<列名>;
+例：alter table test add java_grade int;
+例：alter table test drop column java_grade;
+Insert语句：insert into<表名>(<属性列1>,<属性列2>,……)values(<常量1>,<常量2>,……);
+例：insert into test (sno,sname,sdept,ssex,sage) values (2021001,'李明','数学系','男',20);
+Update语句：update<表名>set<列名>=<表达式>where<条件>;
+例：update test set sage=18 where sno=2021001;
+Delete语句：delete from<表名>where<条件>;
+例：delete from test where sno=2021001;
+Select语句：select<目标列表达式>from<表名>[where<条件表达式>][group by<列名1>[having<条件表达式>]][order by<列名2>][asc|desc];
+例：select * from test;
+select * from test where sno=2021001;
